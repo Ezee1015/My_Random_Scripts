@@ -4,8 +4,9 @@
 function INSTALAR {
 
     mkdir ~/script
-    mv Script/Suspender\ Talkie-Clock.sh ~/script/
-    
+    cp Script/Suspender\ Talkie-Clock.sh ~/script/
+    cp Script/Talkie-Clock.sh ~/script/
+
 }
 
 

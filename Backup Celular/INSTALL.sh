@@ -4,7 +4,10 @@ function INSTALAR {
 
     mkdir ~/script
     cp Script/Backup\ Celular.sh ~/script/
-    
+    echo ""
+    echo "El Script se encuentra en $HOME/script/Backup Celular.sh.
+    echo "Puede crear un Acceso directo en el Escritorio con el siguiente comando:"
+    echo "          bash $HOME/script/Backup Celular.sh"
 }
 
 

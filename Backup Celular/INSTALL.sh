@@ -1,15 +1,10 @@
-
 #!/bin/bash
 
 function INSTALAR {
 
     mkdir ~/script
-    cp Script/Suspender\ Talkie-Clock.sh ~/script/
-    cp Script/Talkie-Clock.sh ~/script/
-    # cp Script/Talkie-Clock.sh ~/.config/autostart
+    cp Script/Backup\ Celular.sh ~/script/
     
-    (crontab -l 2>/dev/null; echo "@reboot bash $HOME/script/Talkie-Clock.sh") | crontab -
-
 }
 
 
@@ -22,7 +17,7 @@ function MENU {
     done
     
     echo "" ; echo ""
-    read -p "Desea Instalar Talkie-Clock? (S/N)>  " respuesta
+    read -p "Desea Instalar el Script de Backup de Celular? (S/N)>  " respuesta
     clear
     echo "" ; echo ""
 

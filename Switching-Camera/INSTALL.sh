@@ -4,10 +4,14 @@
 function INSTALAR {
 
     mkdir ~/script/
-    cp -rf Script/Camara_Web.sh ~/script
+    mkdir ~/script/Data_Temp_Scripts
+    
+    cp -rf Script/Camara_Web.sh ~/script/
+    cp -rf Script/Camara_Autorun.sh  ~/script/
+
+    (crontab -l 2>/dev/null; echo "@reboot bash $HOME/script/Camara_Autorun.sh") | crontab -
 
     sudo modprobe -a uvcvideo
-    notify-send -t 1000 -i camera "Cámara Conectada" "Se ha Conectado la Cámara"
     echo "CameraStatus=On" > ~/.script/Data_Temp_Scripts/CameraWeb.config
     echo "[Desktop Entry]" > ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "Version=1.0" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
@@ -20,6 +24,12 @@ function INSTALAR {
     echo "Terminal=true" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "StartupNotify=true" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
     chmod +x ~/Escritorio/Conexión\ de\ Cámara.desktop
+
+
+    # echo "Para que el programa pueda funcionar correctamente:"
+    # echo "      - Ponga en autoejecutar al inicio este script:"
+    # echo "     $HOME/script/Camara_Autorun.sh"
+
 
 }
 

@@ -5,7 +5,7 @@ FORMATO=12           #
 #FORMATO=24          #
 ######################
 
-while TRUE ; do
+while ( true ) ; do
     #ACTUALIZA LA FECHA
     SEGUNDOS=$(date +%S)
     MINUTOS=$(date +%M)

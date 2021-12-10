@@ -4,11 +4,17 @@
 function INSTALAR {
 
     mkdir ~/script
+    mkdir ~/Música/
+    mkdir ~/Música/Talkie-Clock\ Audios
     cp Script/Suspender\ Talkie-Clock.sh ~/script/
     cp Script/Talkie-Clock.sh ~/script/
     # cp Script/Talkie-Clock.sh ~/.config/autostart
     
     (crontab -l 2>/dev/null; echo "@reboot bash $HOME/script/Talkie-Clock.sh") | crontab -
+
+    echo "Para que el programa funcione, cree archivos de audio en..."
+    echo " $HOME/Música/Talkie-Clock\ Audios/SonLasXX.mp3"
+    echo "Donde XX es la hora. Por ejemplo: 03, 12, 15, etc."
 
 }
 

@@ -18,7 +18,7 @@ function INSTALAR {
     echo "Type=Application" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "Name=Desactivar la Cámara" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "Comment=Activa/Desactiva la Cámara" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
-    echo "Exec=bash ~/.script/Camara_Web.sh" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
+    echo "Exec=bash ~/script/Camara_Web.sh" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "Icon=camera" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "Path=" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "Terminal=true" >> ~/Escritorio/Conexión\ de\ Cámara.desktop

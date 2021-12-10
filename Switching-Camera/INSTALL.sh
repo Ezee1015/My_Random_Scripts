@@ -12,7 +12,7 @@ function INSTALAR {
     (crontab -l 2>/dev/null; echo "@reboot bash $HOME/script/Camara_Autorun.sh") | crontab -
 
     sudo modprobe -a uvcvideo
-    echo "CameraStatus=On" > ~/.script/Data_Temp_Scripts/CameraWeb.config
+    echo "CameraStatus=On" > ~/script/Data_Temp_Scripts/CameraWeb.config
     echo "[Desktop Entry]" > ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "Version=1.0" >> ~/Escritorio/Conexión\ de\ Cámara.desktop
     echo "Type=Application" >> ~/Escritorio/Conexión\ de\ Cámara.desktop

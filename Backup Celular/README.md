@@ -8,3 +8,9 @@ git
 jmtpfs
 fusermount
 ```
+
+## INSTALACION
+```
+cd Backup\ Celular/
+bash INSTALL.sh
+```

@@ -7,7 +7,7 @@ function INSTALAR {
     echo ""
     echo "El Script se encuentra en $HOME/script/Backup\ Celular.sh."
     echo "Puede crear un Acceso directo en el Escritorio que ejecute el siguiente comando:"
-    echo "          bash $HOME/script/Backup Celular.sh"
+    echo "          bash $HOME/script/Backup\ Celular.sh"
 }
 
 

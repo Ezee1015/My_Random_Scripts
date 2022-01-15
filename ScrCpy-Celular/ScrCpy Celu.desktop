@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[es_AR]=
+Comment=
+Exec=konsole -e bash ~/script/ScrCpyCelu.sh && scrcpy
+GenericName[es_AR]=ScrCpy Celu
+GenericName=ScrCpy Celu
+Icon=phone
+MimeType=
+Name[es_AR]=ScrCpy Celu
+Name=ScrCpy Celu
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

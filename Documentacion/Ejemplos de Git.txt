@@ -1,0 +1,48 @@
+git init --> Inicia el Repo
+git add <archivo> --> Agrega el archivo/s al Commit
+git commit --> Escribe un nuevo Commit
+git commit -a --> Escribe un nuevo Commit, agregando todos los archivos
+                      modificados a los que git vigila al nuevo commit
+git status --> Ver el Status del Proyecto
+git log [--all --graph --decorate] [--oneline] --> Ver el Historial de Versiones del Proyecto
+                                        En el contiene {Hash del Commit y en la
+                                        rama en la que esta (ejemplo: HEAD, que
+                                        es hacia donde apuntamos(la rama donde
+                                        estamos), "-->" Master, hacia la rama Master)}
+git checkout [HASH] --> Transforma tu repositorio local en una version anterior
+                            del Proyecto. Un 'git checkout master' regresa  a
+                            la última versión
+git diff [Hash] [*Hash(default: Head)] [Archivo] --> Muesta lo que cambio desde la ultima snapshot
+                                                        (lo del Hash es la de la rama para Comparar
+                                                        con la Actual, y lo del Archivo, se puede
+                                                        especificar un blob o dejarlo vacio para hacer
+                                                        el proyecto entero. El segundo Hash es para
+                                                        especificar una rama con la que comparar,
+                                                        por defecto es Head)
+
+git branch [-vv] --> Muestra la Rama Actual
+
+git branch [Nombre Rama] --> Crea una Nueva Rama
+
+git merge [Nombre Rama 1] [Nombre Rama 2] --> Mergea (junta) Rama 1 en Rama 2
+
+---
+Si hay un problema
+    - git merge master prueba --> genera un problema
+    - git mergetool (Izquierda es de la rama prueba, Derecha es de la rama Master,
+                      Abajo es el Final y el del medio es el texto que comparte
+                      ambas ramas prueba y Master)
+    - git add [Archivo en Conflicto]
+    - git merge --continue
+---
+
+
+git init --bare --> Crea Servidor Git
+
+git remote add [Nombre (origin)] [Ruta] --> Se enlaza con un servidor git para
+                                            subir los cambios, por convension
+                                            el Nombre del servidor es "origin",
+                                            y la ruta es la ruta del servidor
+
+git push [Remote (=origin)] [Nombre de la Rama Local]:[Nombre de la Rama
+Externa] -- Envía una Cierta Rama a un Server
